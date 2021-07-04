@@ -1,0 +1,37 @@
+.layout {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 60px;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    // background-color: #f7f9fa;
+
+    >.content {
+      flex-grow: 1;
+      padding: 1rem 1rem;
+      width: 1024px;
+      max-width: 100%;
+      margin: auto;
+      padding-bottom: calc(60px + 1rem);
+
+      .table-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .layout {
+    width: calc(100% - 70px - 300px);
+    margin-left: 70px;
+
+    >.content {
+      padding-bottom: 0;
+    }
+  }
+}
