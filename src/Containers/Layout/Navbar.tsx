@@ -1,8 +1,8 @@
+import { BreadcrumbProps, Breadcrumbs } from "@blueprintjs/core";
 import React, { useMemo } from 'react';
-import { Breadcrumbs, BreadcrumbProps, Icon } from "@blueprintjs/core";
-import AraibcFlag from '../../assets/temp/kuwait.png'
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import AraibcFlag from '../../assets/temp/kuwait.png';
 
 const Navbar: React.FC = () => {
   const location = useLocation();

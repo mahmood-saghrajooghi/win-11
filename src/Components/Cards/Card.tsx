@@ -1,4 +1,4 @@
-import React, { Children, ReactNode } from "react";
+import React from "react";
 import { FaCog } from "react-icons/fa";
 import classes from "./Card.module.scss";
 

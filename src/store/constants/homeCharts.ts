@@ -1,4 +1,3 @@
-import { ChartOptions } from "chart.js"
 
 export const ACTIVE_USERS_DATA = {
 	labels: Array.from(Array(30), (_, i) => ""),

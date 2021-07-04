@@ -26,9 +26,9 @@ const Home: React.FC = () => {
 				ctx.restore();
 				ctx.fillStyle = "#92979a";
 				ctx.font = "600 " + 15 + "px QuickSand";
-				var text2 = "total score",
-					textX = Math.round((width - ctx.measureText(text2).width) / 2),
-					textY = textY + 25;
+				var text2 = "total score";
+				textX = Math.round((width - ctx.measureText(text2).width) / 2);
+				textY = textY + 25;
 				ctx.fillText(text2, textX, textY);
 				ctx.save();
 			}
