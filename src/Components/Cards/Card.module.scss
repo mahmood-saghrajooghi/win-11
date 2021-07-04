@@ -1,0 +1,74 @@
+.CardBox {
+	position: relative;
+	padding: .5rem;
+	background-color: var(--lightgrey1);
+	border-radius: 5px;
+	transition: .5s;
+
+	.Title {
+		h3 {
+			font-size: 17px;
+			font-weight: 600;
+
+			small {
+				font-size: 12px;
+				font-weight: 700;
+			}
+		}
+
+		h4 {
+			font-size: 15px;
+			font-weight: 600;
+		}
+
+		h5 {
+			font-size: 12px;
+			color: var(--grey50)
+		}
+
+		h6 {
+			font-size: 11px;
+			color: var(--grey50)
+		}
+	}
+
+	.IconContainer {
+		position: absolute;
+		top: .5rem;
+		right: .5rem;
+		width: 20px;
+		height: 20px;
+		background-color: var(--white);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		transition: .3s;
+
+		.Icon {
+			font-size: 14px;
+			color: var(--bluegrey);
+		}
+
+		&:hover {
+			box-shadow: var(--blueShadow2dp);
+		}
+	}
+	&.expand {
+		.Title {
+
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		}
+	}
+}
+
+.Success {
+	color: var(--teal50);
+}
+
+.Danger {
+	color: var(--red50);
+}
