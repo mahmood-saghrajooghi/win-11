@@ -63,7 +63,8 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/react-table": "^7.7.1",
     "@types/uuid": "^8.3.0",
-    "@types/validator": "^13.1.4"
+    "@types/validator": "^13.1.4",
+    "shelljs": "^0.8.4"
   },
   "proxy": "http://localhost:3005"
 }
