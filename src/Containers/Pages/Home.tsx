@@ -33,7 +33,7 @@ const Home: React.FC = () => {
 				ctx.save();
 			}
 		}
-	})
+	} as any);
 	const donoughtData = DONOUGHT_DATA;
 	const data2 = ACTIVE_USERS_DATA;
 	const data = PAGE_VIEWS_DATA;
