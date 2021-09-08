@@ -4,7 +4,6 @@ import { MdClose } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { ToastContainerProps, ToastOptions } from 'react-toastify/dist/types';
-import Row from '../Grid/Row';
 
 interface MsgContent {
 	title?: string;
@@ -39,7 +38,7 @@ const Msg: React.FC<MsgProps> = ({ closeToast, toastProps, content }) => {
 	}
 
 	return <div className="Toastify__toast-contnet">
-		<Row className="mx-0 no-wrap">
+		<div className="mx-0 no-wrap" style={{ display: "flex" }}>
 			<span className="icon-container">
 				{icon}
 			</span>
@@ -61,7 +60,7 @@ const Msg: React.FC<MsgProps> = ({ closeToast, toastProps, content }) => {
 						: ""
 				}
 			</div>
-		</Row>
+		</div>
 		<button className="Toastify__toast-close-btn" onClick={closeToast}><MdClose /></button>
 	</div>
 }

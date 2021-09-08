@@ -1,0 +1,56 @@
+.task-bar {
+	position: absolute;
+	width: 100vw;
+	height: 39px;
+	background: hsla(0, 0%, 99.6%, .8);
+	backdrop-filter: blur(20px);
+	bottom: 0;
+	z-index: 10000;
+
+	.task-cont {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		&[data-side="center"] {
+			align-items: center;
+		}
+
+		&[data-side="left"] {
+			align-items: flex-start;
+		}
+	}
+
+	.ts-items-list {
+		width: auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		transition: all .2s ease-in-out;
+	}
+
+	.task-icon {
+		user-select: none;
+		position: relative;
+		width: 33px;
+		height: 33px;
+		margin: auto 3px;
+		box-sizing: border-box;
+		border-radius: 0;
+		background: hsla(0, 0%, 99.6%, 0);
+		transform-origin: center;
+		animation: popintro .8s ease-in-out;
+
+		img {
+			pointer-events: none;
+			transform-origin: center;
+			transition: .4s ease-in-out;
+
+			&[data-click=true]:active {
+				transform: scale(.7);
+				transition: .1s ease-in-out;
+			}
+		}
+	}
+}

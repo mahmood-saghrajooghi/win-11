@@ -1,0 +1,10 @@
+.ui-icon {
+	position: relative;
+	display: grid;
+	place-items: center;
+
+	img {
+		transform-origin: center;
+		transition: .4s ease-in-out;
+	}
+}
