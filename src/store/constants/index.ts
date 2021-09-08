@@ -1,1 +1,0 @@
-export const PRODUCT_INITIAL_SORT_STATE = [];
